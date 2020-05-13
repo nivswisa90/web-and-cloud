@@ -1,0 +1,183 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+header,aside,main,footer,article{
+    display:block;
+}
+footer{
+    background-color: black;
+    height: 66px;
+    clear: both;
+
+}
+#wrapper{
+    width:999px;
+    height: 880px;
+    margin:0px auto;
+   
+}
+#logo{
+    background-image: url(/images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center; 
+    width: 99px;
+    height: 99px;
+    display: block;
+    position: absolute;
+    
+    left: 45%;
+}
+.bod header{
+    background-color: rgb(0, 255, 21);
+    height: 100px;
+    position: relative;
+}
+.bod main{
+   position: relative;
+   float: left; 
+   width: 813px;
+   height: 834px;
+    background-color: lightblue; 
+}
+.bod aside{
+    float: left;
+    width: 186px;
+    height: 836px;
+    background-color: lightgreen;
+}  
+.bod article{
+    position: absolute;  
+  background-color: grey;
+}
+#box1{
+    top:18px;
+    left:352px;
+    height: 289px;
+    width: 413px;
+}
+#box2{
+    top:88px;
+    left: 22px;
+    height:300px;
+    width: 179px;
+
+}
+#box3{
+    top: 446px;
+    left: 282px;
+    height: 301px;
+    width: 179px;
+    bottom:85px;
+} 
+#box4{
+    top: 67px;
+    height: 87px;
+    width: 123px;
+    right:245px;
+}
+#box5{
+    top: 67px;
+    right: 83px;
+    height: 87px;
+    width: 123px;
+}
+#box6{
+    top:411px;
+    right: 515px;
+    height: 113px;
+    width: 268px;
+}
+#box7{
+    top:236px;
+    right: 83px;
+    height: 288px;
+    width: 413px;
+}
+.space_nav{
+    position: relative;
+    left: 186px;
+}
+.footerFixed{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+.bod section{
+    width: 1000px;
+    height: 184px;
+    background-color: peachpuff;
+}
+#flexbox{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+     background-color: lightblue; 
+}
+#flexbox > article{
+    left: 88px;
+    width: 204px;
+    height: 314px; 
+    margin: 30px;
+    background-color: palevioletred;
+}
+.layout3 header{
+    background-color: rgb(0, 255, 21);
+    height: 100px;
+    position: relative;
+}
+.layout3 section{
+    width: 1000px;
+    height: 184px;
+    background-color: peachpuff;
+    position: relative;
+}
+.layout3 ul{
+    position: absolute;
+    top: 50%;
+    left: 42%;
+}
+a{
+    text-decoration: none;
+}
+#humburger{
+    display: none;
+}
+@media (max-width: 800px){
+    .layout3 section, #wrapper{
+        width: 600px;
+    }
+    
+    body{
+        background-color: springgreen;
+    }
+    #humburger{
+        display: block;
+        position: relative;
+        right: -550px;
+        top: -24px;
+    }
+}
+
+
+/*
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+*/
