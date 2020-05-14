@@ -1,4 +1,4 @@
-function initialize()
+(function initialize()
 {
     console.log("initialize");
     var articles="";
@@ -8,7 +8,8 @@ function initialize()
     }
     var main = document.getElementsByTagName("main")[0];
     main.innerHTML = articles;
-}
+    (showit())
+}())
 function ChangeColor()
 {
     console.log("ChangeColor");
@@ -32,7 +33,7 @@ function showit()
     var articles = document.getElementsByTagName('article');
     articles[0].onmouseover= function()
     {
-        articles[0].style.backgroundImage = "url('./images/N.jpg";
+        articles[0].style.backgroundImage = "url('../ex3/images/N.jpg";
     }
     articles[0].onmouseout = function()
     {
