@@ -1,0 +1,13 @@
+
+ label {
+    display: block;
+}
+.error {
+    color: darkred;
+}
+.highlight {
+    background-color: aquamarine;
+}
+div{
+  background: rgb(227, 229, 230)
+}

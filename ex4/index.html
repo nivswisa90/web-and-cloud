@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Ex4 - form</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <!-- Bootstrap CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet">
+    <!-- Main CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+   
+   
+    <div class="container">
+        <div class="jumbotron bg-dark text-center">
+            <h1 style="color: Tomato ;">My Wave Form</h1>
+        </div> 
+        <!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark text-center">
+            <a class="navbar-brand " href="#">My Wave form </a>
+        </nav>-->
+        <main >
+            <div class="container-fluid">
+                <form action="http://html5-book.co.il/teach/forms/get_form2.php" method="GET">
+
+                    <div class="row">
+                        <!--  pattern="[A-Z]" -->
+                        <div class="col-6 text-center">
+                            <label class="text-primary">Full Name  </label>
+                        </div>
+                        <div class="col-6 block-center">
+                            <input name="fullName" required type="text" pattern="^[A-Z][a-z]+\s+[a-zA-Z\s]+">
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class=" row">
+                        <div class=" col-6 text-center ">
+                            <label class="text-primary">Password</label>
+                        </div>
+                        <div class="col-6 block-center">
+                            <input name="pass" type="password" pattern=".{8,}">
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <label class="text-primary">Email</label>
+                        </div>
+                        <div class="col-6 block-center">
+                            <input autocomplete name="mail" type="email">
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <label class="text-primary">Favorite surf brand Website</label>
+                        </div>
+                        <div class="col-6 block-center">
+                            <input name="website" type="url">
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <label class="text-primary">Phone</label>
+                        </div>
+                        <div class="col-6 block-center">
+                            <input name="phone" type="tel" pattern="[0-9]{9,10}">
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <label class="text-primary">How much Coffee befor sesion</label>
+                        </div>
+                        <div class="col-6 block-center">
+                            <input name="coffee" type="number">
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <label class="text-primary">Skils (Range)</label>
+                        </div>
+                        <div class="col-6 block-center">
+                            <input max="100" min="50" name="temper" type="range">
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <label class="text-primary">Favorite spot to surf (Address) </label>
+                        </div>
+                        <div class="col-6 block-center">
+                            <textarea class="text-info" cols="10" name="address" rows="5">Type here...</textarea>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <label class="text-primary">Surf:</label>
+                        </div>
+                        <div class="col-6 block-center">
+                            <label class="text-info">Wave surfing:</label>
+                            <input name="interests[]" type="checkbox" value="Wave surfing">
+                            <label class="text-info"> Pool surfing:</label>
+                            <input name="interests[]" type="checkbox" value="Pool surfing">
+                            <label class="text-info">Wind surfing:</label>
+                            <input name="interests[]" type="checkbox" value="Wind surfing">
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <label class="text-primary">Gender</label></div>
+                        <div class="col-6 block-center">
+                            <input checked name="gender" type="radio" value="male" > Male
+                            <input  name="gender" type="radio" value="female"> Female
+                            <input  name="gender" type="radio" value="other"> Other
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <label class="text-primary">How many years you surf (Age)</label>
+                        </div>
+                        <select name="age">
+                            <option  selected="selected">Choose...</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                        </select>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <label class="text-primary">color of bord:</label>
+                        </div>
+                        <input id="changeColor" type="color">
+                    </div>
+                    <br>
+
+                     <div class="col text-center">
+                        <input type="submit" value="submit">
+                    </div>
+                </form>
+            </div>
+        </main>
+
+      
+
+        <script src="includes/js/main.js"></script>
+</body>
+
+</html>
